@@ -1,0 +1,10 @@
+{
+    "source_database": "chroma_v2",
+    "collection": "mini_rag",
+    "total_chunks": 5782,
+    "embedding_dimension": 1024,
+    "embedding_dtype": "float32",
+    "embedding_model": "BGE-M3 (reported from previous project configuration)",
+    "embedding_recomputed": false,
+    "chunk_id_alignment": "Same order as chunks.jsonl"
+}

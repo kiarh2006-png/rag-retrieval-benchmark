@@ -1,0 +1,1367 @@
+{
+  "Dense": {
+    "summary": {
+      "total_queries": 20,
+      "answerable_queries": 20,
+      "unanswerable_queries": 0,
+      "hit@1": 0.8,
+      "hit@3": 0.9,
+      "hit@5": 0.95,
+      "recall@5": 0.875,
+      "mrr": 0.86,
+      "ndcg@5": 0.8107857056773318
+    },
+    "queries": [
+      {
+        "question_id": "q001",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0141",
+          "penal_code-0103",
+          "taazirat-0136"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q002",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0132",
+          "penal_code-0102",
+          "taazirat-0136"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q003",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0135",
+          "taazirat-0130",
+          "taazirat-0132"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.8772153153380493
+        }
+      },
+      {
+        "question_id": "q004",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0463",
+          "civil_law-0082",
+          "civil_law-0368",
+          "civil_law-0083"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q005",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0463",
+          "civil_law-0211",
+          "civil_law-0445",
+          "civil_law-0082"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q006",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0136",
+          "taazirat-0132",
+          "taazirat-0130"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.8503449055347546
+        }
+      },
+      {
+        "question_id": "q007",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0003",
+          "labor_law-0063",
+          "labor_law-0001",
+          "labor_law-0210"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q008",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "civil_law-0463",
+          "civil_law-0083",
+          "civil_law-0080"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.2,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q009",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "civil_law-0463",
+          "civil_law-0083",
+          "civil_law-0092"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q010",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0136",
+          "taazirat-0130",
+          "taazirat-0141"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q011",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0005",
+          "labor_law-0007",
+          "labor_law-0029",
+          "labor_law-0009",
+          "labor_law-0000"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q012",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0089",
+          "labor_law-0092",
+          "labor_law-0091",
+          "labor_law-0137",
+          "labor_law-0144"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q013",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "civil_law-0463",
+          "civil_law-0083",
+          "civil_law-0092"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q014",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0090",
+          "civil_law-0082",
+          "labor_law-0007",
+          "civil_law-0289",
+          "civil_law-0368"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q015",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0084",
+          "civil_law-0083",
+          "penal_code-0099",
+          "registration_law-0071",
+          "civil_law-0092"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q016",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0003",
+          "labor_law-0001",
+          "labor_law-0063",
+          "labor_law-0210"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q017",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "constitution-0131",
+          "civil_procedure-0162",
+          "constitution-0132",
+          "constitution-1256",
+          "constitution-0130"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q018",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_procedure-0000",
+          "civil_procedure-0176",
+          "criminal_procedure-0243",
+          "civil_procedure-0373",
+          "civil_procedure-0102"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q019",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "registration_law-0104",
+          "criminal_procedure-0251",
+          "criminal_procedure-0159",
+          "criminal_procedure-0108"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q020",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0146",
+          "direct_taxes-0001",
+          "direct_taxes-0168",
+          "direct_taxes-0268"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      }
+    ]
+  },
+  "BM25": {
+    "summary": {
+      "total_queries": 20,
+      "answerable_queries": 20,
+      "unanswerable_queries": 0,
+      "hit@1": 0.65,
+      "hit@3": 0.8,
+      "hit@5": 0.8,
+      "recall@5": 0.675,
+      "mrr": 0.7166666666666667,
+      "ndcg@5": 0.6556573596382729
+    },
+    "queries": [
+      {
+        "question_id": "q001",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0141",
+          "taazirat-0130",
+          "taazirat-0191",
+          "taazirat-0132",
+          "criminal_procedure-0001"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.5,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q002",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0134",
+          "penal_code-0042",
+          "taazirat-0132"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q003",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0133",
+          "civil_procedure-0143",
+          "ai-0077",
+          "climate_change-0154"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q004",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0246",
+          "constitution-0365",
+          "civil_procedure-0000",
+          "iran_economy-0186",
+          "ai-0070"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q005",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "ecommerce_law-0034",
+          "direct_taxes-0257",
+          "labor_law-0159"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q006",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0191",
+          "taazirat-0000",
+          "taazirat-0181",
+          "criminal_procedure-0001"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q007",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0086",
+          "labor_law-0067",
+          "labor_law-0000",
+          "labor_law-0087",
+          "labor_law-0021"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q008",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0032",
+          "direct_taxes-0371",
+          "civil_procedure-0000",
+          "ai-0215",
+          "civil_law-0081"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q009",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "criminal_procedure-0052",
+          "family_protection-0032",
+          "direct_taxes-0114",
+          "civil_procedure-0000"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q010",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0133",
+          "taazirat-0130",
+          "taazirat-0000",
+          "taazirat-0141",
+          "taazirat-0136"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q011",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0005",
+          "labor_law-0007",
+          "labor_law-0009",
+          "labor_law-0015",
+          "labor_law-0028"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q012",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0089",
+          "labor_law-0219",
+          "labor_law-0203",
+          "constitution-0487",
+          "constitution-1185"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q013",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "criminal_procedure-0052",
+          "family_protection-0032",
+          "direct_taxes-0114",
+          "civil_procedure-0000"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q014",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0082",
+          "civil_law-0289",
+          "registration_law-0116",
+          "registration_law-0117",
+          "constitution-1244"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q015",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0302",
+          "criminal_procedure-0065",
+          "taazirat-0093",
+          "civil_procedure-0236",
+          "civil_procedure-0153"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q016",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0086",
+          "labor_law-0110",
+          "labor_law-0077",
+          "labor_law-0023"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q017",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "constitution-0131",
+          "constitution-0130",
+          "constitution-0286",
+          "labor_law-0167",
+          "constitution-0110"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q018",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_procedure-0153",
+          "civil_procedure-0000",
+          "civil_procedure-0087",
+          "civil_procedure-0146",
+          "criminal_procedure-0203"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.5,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q019",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "criminal_procedure-0000",
+          "criminal_procedure-0008",
+          "criminal_procedure-0001",
+          "criminal_procedure-0193"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q020",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0224",
+          "direct_taxes-0001",
+          "direct_taxes-0146",
+          "direct_taxes-0357"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      }
+    ]
+  },
+  "Hybrid": {
+    "summary": {
+      "total_queries": 20,
+      "answerable_queries": 20,
+      "unanswerable_queries": 0,
+      "hit@1": 0.75,
+      "hit@3": 0.85,
+      "hit@5": 0.9,
+      "recall@5": 0.8,
+      "mrr": 0.8099999999999999,
+      "ndcg@5": 0.7653286798191365
+    },
+    "queries": [
+      {
+        "question_id": "q001",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0141",
+          "taazirat-0130",
+          "taazirat-0133",
+          "taazirat-0132",
+          "taazirat-0053"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.5,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q002",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0133",
+          "taazirat-0132",
+          "penal_code-0102",
+          "taazirat-0134"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q003",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0133",
+          "taazirat-0130",
+          "taazirat-0131",
+          "taazirat-0141",
+          "taazirat-0138"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6934264036172708
+        }
+      },
+      {
+        "question_id": "q004",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0368",
+          "civil_law-0082",
+          "family_protection-0032",
+          "family_protection-0022"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q005",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "civil_law-0270",
+          "civil_law-0433",
+          "civil_law-0193"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q006",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0000",
+          "taazirat-0133",
+          "taazirat-0141",
+          "criminal_procedure-0001"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q007",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0001",
+          "labor_law-0087",
+          "labor_law-0077",
+          "labor_law-0063"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q008",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0368",
+          "civil_law-0082",
+          "taazirat-0127",
+          "civil_law-0080"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.2,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q009",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0368",
+          "taazirat-0127",
+          "civil_law-0082",
+          "civil_law-0270"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q010",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0133",
+          "taazirat-0130",
+          "taazirat-0136",
+          "taazirat-0141",
+          "taazirat-0138"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q011",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0005",
+          "labor_law-0007",
+          "labor_law-0009",
+          "labor_law-0023",
+          "labor_law-0239"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q012",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0089",
+          "constitution-0487",
+          "labor_law-0004",
+          "labor_law-0136",
+          "constitution-1182"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q013",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0368",
+          "taazirat-0127",
+          "civil_law-0082",
+          "civil_law-0270"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q014",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0082",
+          "civil_law-0289",
+          "labor_law-0007",
+          "civil_law-0368",
+          "registration_law-0131"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q015",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0083",
+          "registration_law-0076",
+          "civil_law-0091",
+          "direct_taxes-0413",
+          "civil_procedure-0153"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q016",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0077",
+          "labor_law-0074",
+          "labor_law-0040",
+          "labor_law-0110"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q017",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "constitution-0131",
+          "constitution-0130",
+          "constitution-0132",
+          "constitution-0755",
+          "constitution-1045"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q018",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_procedure-0000",
+          "civil_procedure-0120",
+          "civil_procedure-0087",
+          "civil_procedure-0102",
+          "civil_procedure-0176"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q019",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "criminal_procedure-0000",
+          "criminal_procedure-0251",
+          "criminal_procedure-0004",
+          "criminal_procedure-0139"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q020",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0146",
+          "direct_taxes-0001",
+          "direct_taxes-0228",
+          "direct_taxes-0224"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      }
+    ]
+  }
+}

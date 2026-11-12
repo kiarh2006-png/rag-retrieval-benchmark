@@ -1,0 +1,5 @@
+numpy
+rank-bm25
+PyYAML
+pytest
+requests
