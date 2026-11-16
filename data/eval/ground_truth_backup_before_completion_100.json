@@ -1,0 +1,440 @@
+[
+  {
+    "id": "q001",
+    "question": "طبق ماده 154 قانون مجازات تعزیرات، سرقت در چه شرایطی مشمول مجازات مقرر در این ماده می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q002",
+    "question": "اگر چند نفر شبانه با سلاح و از طریق شکستن حرز اقدام به سرقت کنند و هنگام سرقت فردی را تهدید کنند، این وضعیت با کدام ماده قانونی مرتبط است؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q003",
+    "question": "برای تحقق شرایط پنج‌گانه ذکرشده در ماده 154، چه ویژگی‌هایی باید در زمان وقوع سرقت وجود داشته باشند؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q004",
+    "question": "در قانون مدنی، عقد چگونه تعریف شده است؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0080"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q005",
+    "question": "تفاوت عقد لازم و عقد جایز از نظر امکان فسخ چیست؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q006",
+    "question": "کدام سند از میان قانون مجازات اسلامی و قانون مجازات تعزیرات، پنج شرط مشخص برای سرقت در ماده 154 بیان می‌کند؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q007",
+    "question": "طبق ماده ۲ قانون کار، چه کسی کارگر محسوب می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q008",
+    "question": "طبق ماده ۱۸۳ قانون مدنی، عقد چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0080"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q009",
+    "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q010",
+    "question": "طبق ماده ۱۵۴ قانون مجازات (تعزیرات)، یکی از شرایط پنج‌گانه سرقت چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q011",
+    "question": "طبق ماده ۷ قانون کار، قرارداد کار چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0005"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q012",
+    "question": "طبق ماده ۷۹ قانون کار، به‌کارگیری افراد زیر چند سال ممنوع است؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0089"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q013",
+    "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q014",
+    "question": "طبق ماده ۱۹۰ قانون مدنی، شرایط اساسی صحت هر معامله چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0082"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q015",
+    "question": "طبق ماده ۱۹۳ قانون مدنی، انشای معامله در چه صورتی می‌تواند از طریق عمل انجام شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0083"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q016",
+    "question": "طبق ماده ۲ قانون کار، کارگر چه کسی است؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q017",
+    "question": "طبق اصل سی و هفتم قانون اساسی جمهوری اسلامی ایران، اصل برائت به چه معناست؟",
+    "category": "simple",
+    "expected_documents": [
+      "constitution"
+    ],
+    "relevant_chunk_ids": [
+      "constitution-0131"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q018",
+    "question": "طبق ماده ۲ قانون آیین دادرسی مدنی، چه اشخاصی می‌توانند رسیدگی به دعوا را از دادگاه درخواست کنند؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "civil_procedure-0000",
+      "civil_procedure-0001"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q019",
+    "question": "طبق ماده ۳ قانون آیین دادرسی کیفری، تعقیب متهم از جهت جنبه الهی و حفظ حقوق عمومی بر عهده چه کسی است و تعقیب از جهت جنبه خصوصی چگونه آغاز می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0002"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q020",
+    "question": "طبق ماده ۱ قانون مالیات‌های مستقیم، اشخاص حقیقی ایرانی مقیم ایران نسبت به چه درآمدهایی مشمول پرداخت مالیات هستند؟",
+    "category": "simple",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q021",
+    "question": "هوش مصنوعی در تعریف نقل‌شده از جان مک‌کارتی به چه حوزه‌ای مربوط می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0049"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q022",
+    "question": "بازنمایی دانش چگونه به برنامه‌های هوش مصنوعی کمک می‌کند؟",
+    "category": "simple",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0016"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q023",
+    "question": "چه عواملی می‌توانند باعث آوارگی بیشتر افراد در اثر تغییرات اقلیمی شوند؟",
+    "category": "simple",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0107"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q024",
+    "question": "طبق پژوهش‌های انجام‌شده از سال ۲۰۱۹ تا ۲۰۲۱، اجماع علمی درباره نقش انسان در تغییر اقلیم چقدر گزارش شده است؟",
+    "category": "simple",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0175"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q025",
+    "question": "واژه کامپیوتر در سال ۱۶۴۶ میلادی به چه معنا وارد فرهنگ انگلیسی آکسفورد شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0011"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q026",
+    "question": "رایانه اپل لیسا در چه سالی طراحی و در چه سالی عرضه شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0045"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q027",
+    "question": "طبق ماده ۱۵ قانون تجارت الکترونیکی، داده‌پیام و امضای الکترونیکی مطمئن از نظر اعتبار و قابلیت استناد چه حکمی دارند؟",
+    "category": "simple",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0019"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q028",
+    "question": "در طلاق توافقی، مرکز مشاوره خانواده پس از مشخص‌کردن موارد توافق چه اقدامی انجام می‌دهد؟",
+    "category": "simple",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0028"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q029",
+    "question": "طبق ماده ۴۹ قانون حمایت خانواده، اگر مرد از ثبت ازدواج دائم در دفاتر رسمی خودداری کند، چه پیامدی دارد؟",
+    "category": "simple",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0052"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q030",
+    "question": "طبق اطلاعات متن، هر تیم فوتبال چند بازیکن دارد و بالاترین نهاد ورزشی این رشته چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "football"
+    ],
+    "relevant_chunk_ids": [
+      "football-0001"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q031",
+    "question": "پس از حمله مغولان به ایران، چه آسیب‌هایی به شهرها و جامعه وارد شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "iran_history"
+    ],
+    "relevant_chunk_ids": [
+      "iran_history-0156"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q032",
+    "question": "طبق متن ماده ۱۱۹ نقل‌شده در چانک، اگر شخصی مالی را که برای امانت یا مصرف معین به او سپرده شده به زیان مالک تصاحب یا تلف کند، چه رفتاری انجام داده است؟",
+    "category": "simple",
+    "expected_documents": [
+      "penal_code"
+    ],
+    "relevant_chunk_ids": [
+      "penal_code-0111"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q033",
+    "question": "چه عواملی باعث تفاوت میان انواع آشپزی منطقه‌ای ایرانی می‌شوند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_cuisine"
+    ],
+    "relevant_chunk_ids": [
+      "persian_cuisine-0002"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q034",
+    "question": "طبق کنده‌کاری توصیف‌شده در متن، از میان ۱۱ خنیاگر چند نفر چنگ، چند نفر نی و چند نفر دهل می‌نواختند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0009"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q035",
+    "question": "بخش‌های نمایش مرسوم موسیقی ایرانی که در متن معرفی شده‌اند کدام‌اند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0017"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q036",
+    "question": "نخستین ماهواره‌ای که به مدار زمین رفت چه نام داشت و در چه سالی این اتفاق افتاد؟",
+    "category": "simple",
+    "expected_documents": [
+      "spaceflight"
+    ],
+    "relevant_chunk_ids": [
+      "spaceflight-0002"
+    ],
+    "answerable": true
+  }
+]

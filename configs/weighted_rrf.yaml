@@ -1,0 +1,9 @@
+experiment_name: weighted_rrf_dense2_bm251
+ground_truth: data/eval/ground_truth.json
+corpus: data/corpus/chunks.jsonl
+results_dir: results
+top_k: 5
+candidate_k: 100
+rrf_k: 60
+dense_weight: 2.0
+bm25_weight: 1.0

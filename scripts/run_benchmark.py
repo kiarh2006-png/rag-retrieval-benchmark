@@ -1,131 +1,130 @@
-
-import sys
+import argparse
 import json
+import sys
 from pathlib import Path
+from datetime import datetime, timezone
+import yaml
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(PROJECT_ROOT))
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
-from src.retrieval.hybrid import HybridRetriever
-from src.evaluation.metrics import (
-    evaluate_query,
-    aggregate_results,
-)
-
-
-GROUND_TRUTH_PATH = PROJECT_ROOT / "data/eval/ground_truth.json"
-OUTPUT_PATH = PROJECT_ROOT / "data/eval/benchmark_results.json"
+from src.retrieval.dense import DenseRetriever
+from src.retrieval.lexical import BM25Retriever
+from src.retrieval.hybrid import rrf_fuse
+from src.evaluation.metrics import evaluate_query, aggregate_results
+from src.evaluation.reporting import summarize_by_category, build_failure_candidates
 
 
-def load_questions():
-    with open(GROUND_TRUTH_PATH, "r", encoding="utf-8") as file:
-        return json.load(file)
+def load_json(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def print_summary(name, summary):
-    print(f"\n{name}")
-    print("=" * 65)
+def run(config):
+    questions = load_json(ROOT / config.get("ground_truth", "data/eval/ground_truth.json"))
+    chunks = load_jsonl(ROOT / config.get("corpus", "data/corpus/chunks.jsonl"))
+    chunk_lookup = {c["chunk_id"]: c for c in chunks}
+    for q in questions:
+        if q["answerable"] and any(cid not in chunk_lookup for cid in q["relevant_chunk_ids"]):
+            raise ValueError(f"Unknown relevant chunk in {q['id']}")
 
-    print("Total queries:", summary["total_queries"])
-    print("Answerable:", summary["answerable_queries"])
-    print("Unanswerable:", summary["unanswerable_queries"])
+    top_k = int(config.get("top_k", 5))
+    candidate_k = int(config.get("candidate_k", 100))
+    rrf_k = int(config.get("rrf_k", 60))
+    dense_weight = float(config.get("dense_weight", 1.0))
+    bm25_weight = float(config.get("bm25_weight", 1.0))
+    if top_k < 1 or candidate_k < top_k or rrf_k < 1:
+        raise ValueError("Require top_k>=1, candidate_k>=top_k, rrf_k>=1")
 
-    for metric in [
-        "hit@1",
-        "hit@3",
-        "hit@5",
-        "recall@5",
-        "mrr",
-        "ndcg@5",
-    ]:
-        print(f"{metric:12}: {summary[metric]:.4f}")
+    print(f"Loading retrievers | top_k={top_k} candidate_k={candidate_k} rrf_k={rrf_k}")
+    dense = DenseRetriever()
+    bm25 = BM25Retriever()
+    methods = {"Dense": dense, "BM25": bm25, "Hybrid_RRF": None}
+    output = {
+        "metadata": {
+            "experiment_name": config.get("experiment_name", "baseline"),
+            "created_at_utc": datetime.now(timezone.utc).isoformat(),
+            "corpus_chunks": len(chunks),
+            "questions": len(questions),
+            "settings": {"top_k": top_k, "candidate_k": candidate_k, "rrf_k": rrf_k,
+                         "dense_model": "bge-m3", "embedding_source": "frozen dense_embeddings.npy",
+                         "lexical": "BM25Okapi", "hybrid": "weighted RRF",
+                         "dense_weight": dense_weight, "bm25_weight": bm25_weight},
+        }
+    }
+
+    print("\nPrecomputing candidate lists (one Dense embedding call per question)...")
+    candidate_cache = {}
+    for i, q in enumerate(questions, start=1):
+        print(f"\rCandidates: {i}/{len(questions)} {q['id']}", end="", flush=True)
+        candidate_cache[q["id"]] = (
+            dense.search(q["question"], top_k=candidate_k),
+            bm25.search(q["question"], top_k=candidate_k),
+        )
+    print()
+
+    for name, retriever in methods.items():
+        print(f"\nRunning {name}")
+        rows = []
+        for i, q in enumerate(questions, start=1):
+            print(f"\r{name}: {i}/{len(questions)} {q['id']}", end="", flush=True)
+            dense_candidates, lexical_candidates = candidate_cache[q["id"]]
+            if name == "Dense":
+                found = dense_candidates[:top_k]
+            elif name == "BM25":
+                found = lexical_candidates[:top_k]
+            else:
+                found = rrf_fuse(
+                    [dense_candidates, lexical_candidates],
+                    rrf_k=rrf_k,
+                    weights=[dense_weight, bm25_weight],
+                    top_k=top_k,
+                )
+            ids = [x["chunk_id"] for x in found]
+            metrics = evaluate_query(ids, q["relevant_chunk_ids"], q["answerable"])
+            rows.append({
+                "question_id": q["id"], "category": q["category"],
+                "answerable": q["answerable"], "retrieved_chunk_ids": ids,
+                "metrics": metrics,
+            })
+        print()
+        output[name] = {
+            "summary": aggregate_results([r["metrics"] for r in rows]),
+            "by_category": summarize_by_category(rows),
+            "queries": rows,
+        }
+
+    questions_by_id = {q["id"]: q for q in questions}
+    output["failure_candidates"] = build_failure_candidates(
+        {k: v for k, v in output.items() if k in methods},
+        questions_by_id, chunk_lookup
+    )
+
+    results_dir = ROOT / config.get("results_dir", "results")
+    results_dir.mkdir(parents=True, exist_ok=True)
+    name = config.get("experiment_name", "baseline")
+    out_path = results_dir / f"{name}.json"
+    out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\nSaved: {out_path}")
+    for method in methods:
+        print(method, json.dumps(output[method]["summary"], ensure_ascii=False))
+    print("Failure candidates:", len(output["failure_candidates"]))
+    return output
+
+
+def load_jsonl(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return [json.loads(line) for line in f if line.strip()]
 
 
 def main():
-    questions = load_questions()
-
-    print("QUESTIONS:", len(questions))
-    print("Initializing retrievers...")
-
-    # Initialize each retrieval engine only once.
-    hybrid = HybridRetriever(rrf_k=60)
-
-    dense = hybrid.dense
-    bm25 = hybrid.bm25
-
-    retrievers = {
-        "Dense": dense,
-        "BM25": bm25,
-        "Hybrid": hybrid,
-    }
-
-    all_results = {}
-
-    for name, retriever in retrievers.items():
-
-        print(f"\nRunning {name}...")
-
-        query_results = []
-
-        for question in questions:
-
-            query = question["question"]
-
-            if name == "Hybrid":
-                results = retriever.search(
-                    query,
-                    top_k=5,
-                    candidate_k=100,
-                )
-            else:
-                results = retriever.search(
-                    query,
-                    top_k=5,
-                )
-
-            retrieved_ids = [
-                item["chunk_id"]
-                for item in results
-            ]
-
-            metrics = evaluate_query(
-                retrieved_ids,
-                question["relevant_chunk_ids"],
-                answerable=question["answerable"],
-            )
-
-            query_results.append({
-                "question_id": question["id"],
-                "category": question["category"],
-                "answerable": question["answerable"],
-                "retrieved_chunk_ids": retrieved_ids,
-                "metrics": metrics,
-            })
-
-        summary = aggregate_results([
-            item["metrics"] for item in query_results
-        ])
-
-        all_results[name] = {
-            "summary": summary,
-            "queries": query_results,
-        }
-
-        print_summary(name, summary)
-
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as file:
-        json.dump(
-            all_results,
-            file,
-            ensure_ascii=False,
-            indent=2,
-        )
-
-    print("\n" + "=" * 65)
-    print("BENCHMARK COMPLETED SUCCESSFULLY")
-    print("Results saved to:", OUTPUT_PATH)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", default="configs/baseline.yaml")
+    args = parser.parse_args()
+    config_path = ROOT / args.config
+    with open(config_path, "r", encoding="utf-8") as f:
+        config = yaml.safe_load(f) or {}
+    run(config)
 
 
 if __name__ == "__main__":

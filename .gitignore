@@ -1,5 +1,5 @@
-﻿.venv/
+.venv/
 .idea/
 __pycache__/
-*.pyc
-data/embeddings/
+*.py[cod]
+.pytest_cache/

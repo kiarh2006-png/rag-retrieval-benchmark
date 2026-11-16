@@ -1,0 +1,7 @@
+experiment_name: baseline
+ground_truth: data/eval/ground_truth.json
+corpus: data/corpus/chunks.jsonl
+results_dir: results
+top_k: 5
+candidate_k: 100
+rrf_k: 60

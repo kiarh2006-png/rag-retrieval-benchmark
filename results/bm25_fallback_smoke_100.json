@@ -1,0 +1,2298 @@
+{
+  "metadata": {
+    "experiment_name": "bm25_fallback_smoke_100",
+    "status": "partial_offline_smoke_test_not_final_three_way_benchmark",
+    "corpus_chunks": 5782,
+    "questions": 100,
+    "settings": {
+      "top_k": 5,
+      "lexical": "Okapi BM25 fallback implementation",
+      "k1": 1.5,
+      "b": 0.75,
+      "note": "rank_bm25 was not installed in the execution environment; target-machine run with requirements.txt will use BM25Okapi."
+    }
+  },
+  "BM25_fallback": {
+    "summary": {
+      "total_queries": 100,
+      "answerable_queries": 90,
+      "unanswerable_queries": 10,
+      "hit@1": 0.6777777777777778,
+      "hit@3": 0.8888888888888888,
+      "hit@5": 0.9444444444444444,
+      "recall@5": 0.8722222222222222,
+      "mrr": 0.7825925925925926,
+      "ndcg@5": 0.7739395837795892
+    },
+    "by_category": {
+      "legal_terminology": {
+        "total_queries": 15,
+        "answerable_queries": 15,
+        "unanswerable_queries": 0,
+        "hit@1": 0.6,
+        "hit@3": 0.8666666666666667,
+        "hit@5": 0.9333333333333333,
+        "recall@5": 0.9333333333333333,
+        "mrr": 0.7388888888888889,
+        "ndcg@5": 0.788231054585851
+      },
+      "multi_hop": {
+        "total_queries": 10,
+        "answerable_queries": 10,
+        "unanswerable_queries": 0,
+        "hit@1": 0.7,
+        "hit@3": 0.8,
+        "hit@5": 0.9,
+        "recall@5": 0.6,
+        "mrr": 0.775,
+        "ndcg@5": 0.5900445805355202
+      },
+      "paraphrase": {
+        "total_queries": 15,
+        "answerable_queries": 15,
+        "unanswerable_queries": 0,
+        "hit@1": 0.6,
+        "hit@3": 0.8,
+        "hit@5": 0.9333333333333333,
+        "recall@5": 0.9,
+        "mrr": 0.7155555555555555,
+        "ndcg@5": 0.7432474876251638
+      },
+      "similar_documents": {
+        "total_queries": 10,
+        "answerable_queries": 10,
+        "unanswerable_queries": 0,
+        "hit@1": 0.7,
+        "hit@3": 0.9,
+        "hit@5": 1.0,
+        "recall@5": 0.85,
+        "mrr": 0.82,
+        "ndcg@5": 0.7725351605443128
+      },
+      "simple": {
+        "total_queries": 40,
+        "answerable_queries": 40,
+        "unanswerable_queries": 0,
+        "hit@1": 0.725,
+        "hit@3": 0.95,
+        "hit@5": 0.95,
+        "recall@5": 0.9125,
+        "mrr": 0.8166666666666667,
+        "ndcg@5": 0.826414674904987
+      },
+      "unanswerable": {
+        "total_queries": 10,
+        "answerable_queries": 0,
+        "unanswerable_queries": 10,
+        "hit@1": null,
+        "hit@3": null,
+        "hit@5": null,
+        "recall@5": null,
+        "mrr": null,
+        "ndcg@5": null
+      }
+    },
+    "queries": [
+      {
+        "question_id": "q001",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0141",
+          "taazirat-0191",
+          "taazirat-0130",
+          "taazirat-0132",
+          "criminal_procedure-0221"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.3065735963827292
+        }
+      },
+      {
+        "question_id": "q002",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0131",
+          "taazirat-0134",
+          "taazirat-0133",
+          "penal_code-0042",
+          "taazirat-0132"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q003",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0133",
+          "civil_procedure-0143",
+          "ecommerce_law-0014",
+          "climate_change-0154"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q004",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0246",
+          "constitution-0365",
+          "civil_law-0073",
+          "ai-0070",
+          "constitution-0486"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q005",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "civil_law-0082",
+          "civil_law-0270",
+          "ecommerce_law-0034",
+          "direct_taxes-0257"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q006",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0191",
+          "penal_code-0000",
+          "taazirat-0141",
+          "taazirat-0000"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q007",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0086",
+          "labor_law-0000",
+          "labor_law-0067",
+          "labor_law-0087",
+          "labor_law-0021"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q008",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0371",
+          "family_protection-0032",
+          "civil_procedure-0000",
+          "civil_law-0368",
+          "direct_taxes-0407"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q009",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "criminal_procedure-0052",
+          "family_protection-0032",
+          "civil_procedure-0000",
+          "direct_taxes-0114"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q010",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0130",
+          "taazirat-0133",
+          "taazirat-0000",
+          "taazirat-0141",
+          "taazirat-0136"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q011",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0005",
+          "labor_law-0007",
+          "labor_law-0015",
+          "labor_law-0239",
+          "labor_law-0009"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q012",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0089",
+          "labor_law-0219",
+          "constitution-0487",
+          "constitution-1185",
+          "direct_taxes-0426"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q013",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0081",
+          "criminal_procedure-0052",
+          "family_protection-0032",
+          "civil_procedure-0000",
+          "direct_taxes-0114"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q014",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0082",
+          "civil_law-0289",
+          "registration_law-0116",
+          "constitution-1244",
+          "direct_taxes-0143"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q015",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0302",
+          "criminal_procedure-0065",
+          "civil_procedure-0236",
+          "direct_taxes-0413",
+          "taazirat-0093"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q016",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0110",
+          "labor_law-0067",
+          "labor_law-0091",
+          "labor_law-0086"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q017",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "constitution-0131",
+          "constitution-0130",
+          "constitution-0286",
+          "constitution-0110",
+          "labor_law-0167"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q018",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_procedure-0000",
+          "civil_procedure-0153",
+          "civil_procedure-0131",
+          "civil_procedure-0093",
+          "civil_procedure-0120"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q019",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "criminal_procedure-0000",
+          "criminal_procedure-0008",
+          "criminal_procedure-0001",
+          "criminal_procedure-0004"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q020",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0001",
+          "direct_taxes-0224",
+          "direct_taxes-0146",
+          "direct_taxes-0357"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q021",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0049",
+          "ai-0039",
+          "ai-0036",
+          "ai-0046",
+          "ai-0003"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q022",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0016",
+          "ai-0019",
+          "ai-0000",
+          "ai-0080",
+          "ai-0087"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q023",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0107",
+          "climate_change-0100",
+          "climate_change-0150",
+          "climate_change-0016",
+          "climate_change-0080"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q024",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0175",
+          "climate_change-0190",
+          "climate_change-0193",
+          "climate_change-0192",
+          "climate_change-0189"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q025",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "computers-0011",
+          "computers-0014",
+          "computers-0024",
+          "football-0008",
+          "football-0009"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q026",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "computers-0045",
+          "computers-0047",
+          "computers-0048",
+          "computers-0044",
+          "computers-0049"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q027",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0019",
+          "ecommerce_law-0016",
+          "ecommerce_law-0017",
+          "ecommerce_law-0005",
+          "ecommerce_law-0006"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q028",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0028",
+          "family_protection-0027",
+          "family_protection-0020",
+          "family_protection-0019",
+          "family_protection-0018"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q029",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0127",
+          "family_protection-0022",
+          "family_protection-0052",
+          "taazirat-0126",
+          "family_protection-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q030",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "football-0001",
+          "football-0003",
+          "football-0008",
+          "football-0019",
+          "football-0112"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q031",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_history-0156",
+          "iran_history-0086",
+          "iran_history-0154",
+          "iran_history-0143",
+          "iran_history-0152"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q032",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "penal_code-0111",
+          "taazirat-0145",
+          "civil_law-0207",
+          "civil_law-0071",
+          "taazirat-0146"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q033",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_cuisine-0002",
+          "climate_change-0093",
+          "persian_cuisine-0025",
+          "persian_cuisine-0003",
+          "persian_cuisine-0009"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q034",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_music-0009",
+          "football-0111",
+          "direct_taxes-0200",
+          "labor_law-0203",
+          "civil_law-0232"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q035",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_music-0000",
+          "persian_music-0004",
+          "persian_music-0017",
+          "persian_music-0033",
+          "persian_music-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q036",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "spaceflight-0003",
+          "spaceflight-0002",
+          "iran_history-0009",
+          "ai-0022",
+          "iran_history-0222"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q037",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0266",
+          "criminal_procedure-0000",
+          "criminal_procedure-0267",
+          "criminal_procedure-0203",
+          "constitution-1250"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q038",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0146",
+          "direct_taxes-0001",
+          "direct_taxes-0224",
+          "direct_taxes-0092"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q039",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0038",
+          "ecommerce_law-0040",
+          "ecommerce_law-0039",
+          "ecommerce_law-0033",
+          "ecommerce_law-0045"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q040",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0001",
+          "labor_law-0005",
+          "ai-0139",
+          "labor_law-0011"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q041",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0095",
+          "climate_change-0008",
+          "climate_change-0094",
+          "climate_change-0096",
+          "climate_change-0175"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q042",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_economy-0001",
+          "iran_economy-0015",
+          "iran_economy-0061",
+          "iran_economy-0178",
+          "iran_economy-0062"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q043",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_history-0199",
+          "iran_history-0204",
+          "iran_history-0201",
+          "iran_history-0216",
+          "ai-0008"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q044",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "football-0019",
+          "football-0003",
+          "football-0001",
+          "football-0012",
+          "football-0088"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q045",
+        "category": "simple",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_music-0017",
+          "persian_music-0033",
+          "persian_music-0038",
+          "persian_music-0004",
+          "persian_music-0039"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q046",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0369",
+          "direct_taxes-0267",
+          "direct_taxes-0146",
+          "direct_taxes-0268",
+          "direct_taxes-0000"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.2,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q047",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0039",
+          "ecommerce_law-0033",
+          "football-0065",
+          "civil_procedure-0065",
+          "criminal_procedure-0098"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q048",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0023",
+          "labor_law-0063",
+          "labor_law-0109",
+          "labor_law-0081"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q049",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0049",
+          "ai-0039",
+          "ai-0046",
+          "ai-0036",
+          "ai-0082"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q050",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ai-0016",
+          "ai-0019",
+          "ai-0017",
+          "ai-0091",
+          "ai-0049"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q051",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0107",
+          "climate_change-0108",
+          "climate_change-0100",
+          "climate_change-0006",
+          "iran_economy-0100"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q052",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0175",
+          "climate_change-0190",
+          "climate_change-0193",
+          "climate_change-0189",
+          "climate_change-0178"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q053",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "computers-0014",
+          "direct_taxes-0403",
+          "civil_procedure-0077",
+          "labor_law-0197",
+          "computers-0003"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q054",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "computers-0047",
+          "computers-0045",
+          "computers-0044",
+          "computers-0049",
+          "computers-0048"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q055",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_history-0156",
+          "ai-0061",
+          "taazirat-0055",
+          "iran_history-0102",
+          "taazirat-0061"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q056",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_music-0009",
+          "persian_music-0039",
+          "ecommerce_law-0028",
+          "computers-0052",
+          "climate_change-0043"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q057",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "constitution-0315",
+          "ai-0133",
+          "climate_change-0056",
+          "ai-0138",
+          "persian_cuisine-0002"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.2,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q058",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_history-0009",
+          "spaceflight-0003",
+          "spaceflight-0002",
+          "ai-0088",
+          "constitution-0482"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q059",
+        "category": "paraphrase",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0027",
+          "family_protection-0028",
+          "family_protection-0018",
+          "family_protection-0020",
+          "family_protection-0030"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q060",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0000",
+          "criminal_procedure-0001",
+          "criminal_procedure-0057",
+          "computers-0088",
+          "civil_procedure-0116"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.5,
+          "ndcg@5": 0.38685280723454163
+        }
+      },
+      {
+        "question_id": "q061",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0229",
+          "direct_taxes-0303",
+          "direct_taxes-0358",
+          "direct_taxes-0011",
+          "direct_taxes-0215"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 0,
+          "recall@5": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0
+        }
+      },
+      {
+        "question_id": "q062",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0011",
+          "labor_law-0071",
+          "labor_law-0234",
+          "labor_law-0000",
+          "labor_law-0039"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.25,
+          "ndcg@5": 0.2640681225725909
+        }
+      },
+      {
+        "question_id": "q063",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0019",
+          "ecommerce_law-0016",
+          "ecommerce_law-0017",
+          "ecommerce_law-0018",
+          "ecommerce_law-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q064",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0028",
+          "family_protection-0027",
+          "family_protection-0031",
+          "civil_procedure-0363",
+          "civil_procedure-0364"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.9197207891481876
+        }
+      },
+      {
+        "question_id": "q065",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0107",
+          "climate_change-0008",
+          "climate_change-0106",
+          "ai-0139",
+          "climate_change-0183"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q066",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "iran_economy-0001",
+          "iran_economy-0015",
+          "iran_economy-0057",
+          "iran_economy-0178",
+          "iran_economy-0062"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q067",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "persian_music-0009",
+          "persian_music-0039",
+          "persian_music-0000",
+          "persian_music-0004",
+          "persian_music-0049"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q068",
+        "category": "multi_hop",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0001",
+          "labor_law-0037",
+          "constitution-0371",
+          "labor_law-0000",
+          "labor_law-0234"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.8772153153380493
+        }
+      },
+      {
+        "question_id": "q069",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0000",
+          "ecommerce_law-0027",
+          "ecommerce_law-0017",
+          "ecommerce_law-0026",
+          "ecommerce_law-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q070",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0016",
+          "ecommerce_law-0005",
+          "ecommerce_law-0000",
+          "ecommerce_law-0017",
+          "ecommerce_law-0019"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q071",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0019",
+          "ecommerce_law-0016",
+          "ecommerce_law-0017",
+          "ecommerce_law-0013",
+          "ecommerce_law-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q072",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "penal_code-0111",
+          "civil_law-0072",
+          "taazirat-0079",
+          "penal_code-0075",
+          "direct_taxes-0255"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q073",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0000",
+          "criminal_procedure-0001",
+          "constitution-1303",
+          "criminal_procedure-0261",
+          "criminal_procedure-0266"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q074",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0005",
+          "labor_law-0041",
+          "labor_law-0209",
+          "labor_law-0000",
+          "labor_law-0087"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.25,
+          "ndcg@5": 0.43067655807339306
+        }
+      },
+      {
+        "question_id": "q075",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "taazirat-0127",
+          "family_protection-0022",
+          "family_protection-0052",
+          "taazirat-0126",
+          "direct_taxes-0371"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5
+        }
+      },
+      {
+        "question_id": "q076",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_procedure-0000",
+          "civil_procedure-0002",
+          "constitution-0269",
+          "taazirat-0084",
+          "penal_code-0073"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q077",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "direct_taxes-0203",
+          "criminal_procedure-0201",
+          "criminal_procedure-0000",
+          "civil_procedure-0189"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q078",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0039",
+          "ecommerce_law-0038",
+          "ecommerce_law-0066",
+          "ecommerce_law-0040",
+          "direct_taxes-0460"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q079",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0000",
+          "labor_law-0001",
+          "labor_law-0023",
+          "labor_law-0025",
+          "labor_law-0063"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q080",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0366",
+          "direct_taxes-0146",
+          "direct_taxes-0368",
+          "direct_taxes-0267"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q081",
+        "category": "legal_terminology",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0052",
+          "family_protection-0022",
+          "taazirat-0127",
+          "registration_law-0006",
+          "registration_law-0005"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q082",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0000",
+          "ecommerce_law-0018",
+          "ecommerce_law-0005",
+          "ecommerce_law-0013",
+          "ecommerce_law-0003"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q083",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "labor_law-0019",
+          "labor_law-0021",
+          "labor_law-0023",
+          "labor_law-0090",
+          "labor_law-0001"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 0,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 0.2,
+          "ndcg@5": 0.23719771276929622
+        }
+      },
+      {
+        "question_id": "q084",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0052",
+          "taazirat-0127",
+          "family_protection-0022",
+          "civil_procedure-0181",
+          "family_protection-0038"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q085",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "criminal_procedure-0002",
+          "criminal_procedure-0000",
+          "climate_change-0178",
+          "criminal_procedure-0004",
+          "criminal_procedure-0007"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584
+        }
+      },
+      {
+        "question_id": "q086",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "civil_law-0134",
+          "penal_code-0111",
+          "civil_law-0072",
+          "civil_law-0135",
+          "civil_law-0071"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q087",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0000",
+          "direct_taxes-0146",
+          "direct_taxes-0368",
+          "direct_taxes-0267",
+          "direct_taxes-0366"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q088",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "family_protection-0027",
+          "family_protection-0028",
+          "family_protection-0030",
+          "family_protection-0018",
+          "family_protection-0021"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 0,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575
+        }
+      },
+      {
+        "question_id": "q089",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "football-0001",
+          "football-0003",
+          "football-0012",
+          "football-0019",
+          "football-0007"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q090",
+        "category": "similar_documents",
+        "answerable": true,
+        "retrieved_chunk_ids": [
+          "climate_change-0175",
+          "climate_change-0190",
+          "climate_change-0193",
+          "climate_change-0189",
+          "climate_change-0178"
+        ],
+        "metrics": {
+          "answerable": true,
+          "evaluated": true,
+          "hit@1": 1,
+          "hit@3": 1,
+          "hit@5": 1,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0
+        }
+      },
+      {
+        "question_id": "q091",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "ecommerce_law-0050",
+          "ecommerce_law-0048",
+          "ecommerce_law-0067",
+          "ecommerce_law-0051",
+          "civil_procedure-0280"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q092",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "direct_taxes-0358",
+          "direct_taxes-0264",
+          "direct_taxes-0357",
+          "direct_taxes-0356",
+          "direct_taxes-0219"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q093",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "iran_economy-0091",
+          "iran_economy-0179",
+          "iran_economy-0081",
+          "iran_economy-0178",
+          "iran_economy-0008"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q094",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "ai-0030",
+          "criminal_procedure-0052",
+          "civil_procedure-0300",
+          "criminal_procedure-0266",
+          "criminal_procedure-0000"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q095",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "ai-0004",
+          "iran_economy-0187",
+          "climate_change-0302",
+          "ai-0231",
+          "iran_economy-0184"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q096",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "climate_change-0157",
+          "ai-0169",
+          "climate_change-0162",
+          "ai-0142",
+          "direct_taxes-0158"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q097",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "football-0099",
+          "football-0091",
+          "football-0090",
+          "football-0036",
+          "football-0094"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q098",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "iran_economy-0195",
+          "constitution-0060",
+          "constitution-0470",
+          "constitution-1298",
+          "constitution-0061"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q099",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "climate_change-0008",
+          "climate_change-0096",
+          "labor_law-0039",
+          "family_protection-0026",
+          "ai-0103"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      },
+      {
+        "question_id": "q100",
+        "category": "unanswerable",
+        "answerable": false,
+        "retrieved_chunk_ids": [
+          "persian_music-0029",
+          "computers-0097",
+          "constitution-0065",
+          "computers-0022",
+          "computers-0098"
+        ],
+        "metrics": {
+          "answerable": false,
+          "evaluated": false,
+          "hit@1": null,
+          "hit@3": null,
+          "hit@5": null,
+          "recall@5": null,
+          "mrr": null,
+          "ndcg@5": null
+        }
+      }
+    ]
+  }
+}

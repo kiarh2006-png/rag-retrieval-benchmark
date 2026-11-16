@@ -3,160 +3,1242 @@
     "id": "q001",
     "question": "طبق ماده 154 قانون مجازات تعزیرات، سرقت در چه شرایطی مشمول مجازات مقرر در این ماده می‌شود؟",
     "category": "simple",
-    "expected_documents": ["taazirat"],
-    "relevant_chunk_ids": ["taazirat-0130", "taazirat-0131"],
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
     "answerable": true
   },
   {
     "id": "q002",
     "question": "اگر چند نفر شبانه با سلاح و از طریق شکستن حرز اقدام به سرقت کنند و هنگام سرقت فردی را تهدید کنند، این وضعیت با کدام ماده قانونی مرتبط است؟",
     "category": "paraphrase",
-    "expected_documents": ["taazirat"],
-    "relevant_chunk_ids": ["taazirat-0130", "taazirat-0131"],
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
     "answerable": true
   },
   {
     "id": "q003",
     "question": "برای تحقق شرایط پنج‌گانه ذکرشده در ماده 154، چه ویژگی‌هایی باید در زمان وقوع سرقت وجود داشته باشند؟",
     "category": "multi_hop",
-    "expected_documents": ["taazirat"],
-    "relevant_chunk_ids": ["taazirat-0130", "taazirat-0131"],
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
     "answerable": true
   },
   {
     "id": "q004",
     "question": "در قانون مدنی، عقد چگونه تعریف شده است؟",
     "category": "legal_terminology",
-    "expected_documents": ["civil_law"],
-    "relevant_chunk_ids": ["civil_law-0080"],
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0080"
+    ],
     "answerable": true
   },
   {
     "id": "q005",
     "question": "تفاوت عقد لازم و عقد جایز از نظر امکان فسخ چیست؟",
     "category": "legal_terminology",
-    "expected_documents": ["civil_law"],
-    "relevant_chunk_ids": ["civil_law-0081"],
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
     "answerable": true
   },
   {
     "id": "q006",
     "question": "کدام سند از میان قانون مجازات اسلامی و قانون مجازات تعزیرات، پنج شرط مشخص برای سرقت در ماده 154 بیان می‌کند؟",
     "category": "similar_documents",
-    "expected_documents": ["taazirat"],
-    "relevant_chunk_ids": ["taazirat-0130", "taazirat-0131"],
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
     "answerable": true
   },
   {
-  "id": "q007",
-  "question": "طبق ماده ۲ قانون کار، چه کسی کارگر محسوب می‌شود؟",
-  "category": "simple",
-  "expected_documents": ["labor_law"],
-  "relevant_chunk_ids": ["labor_law-0000"],
-  "answerable": true
-},
+    "id": "q007",
+    "question": "طبق ماده ۲ قانون کار، چه کسی کارگر محسوب می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q008",
-  "question": "طبق ماده ۱۸۳ قانون مدنی، عقد چیست؟",
-  "category": "simple",
-  "expected_documents": ["civil_law"],
-  "relevant_chunk_ids": ["civil_law-0080"],
-  "answerable": true
-},
+    "id": "q008",
+    "question": "طبق ماده ۱۸۳ قانون مدنی، عقد چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0080"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q009",
-  "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
-  "category": "simple",
-  "expected_documents": ["civil_law"],
-  "relevant_chunk_ids": ["civil_law-0081"],
-  "answerable": true
-},
+    "id": "q009",
+    "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q010",
-  "question": "طبق ماده ۱۵۴ قانون مجازات (تعزیرات)، یکی از شرایط پنج‌گانه سرقت چیست؟",
-  "category": "simple",
-  "expected_documents": ["taazirat"],
-  "relevant_chunk_ids": ["taazirat-0131"],
-  "answerable": true
-},
+    "id": "q010",
+    "question": "طبق ماده ۱۵۴ قانون مجازات (تعزیرات)، یکی از شرایط پنج‌گانه سرقت چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "taazirat"
+    ],
+    "relevant_chunk_ids": [
+      "taazirat-0130",
+      "taazirat-0131"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q011",
-  "question": "طبق ماده ۷ قانون کار، قرارداد کار چیست؟",
-  "category": "simple",
-  "expected_documents": ["labor_law"],
-  "relevant_chunk_ids": ["labor_law-0005"],
-  "answerable": true
-},
+    "id": "q011",
+    "question": "طبق ماده ۷ قانون کار، قرارداد کار چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0005"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q012",
-  "question": "طبق ماده ۷۹ قانون کار، به‌کارگیری افراد زیر چند سال ممنوع است؟",
-  "category": "simple",
-  "expected_documents": ["labor_law"],
-  "relevant_chunk_ids": ["labor_law-0089"],
-  "answerable": true
-},
+    "id": "q012",
+    "question": "طبق ماده ۷۹ قانون کار، به‌کارگیری افراد زیر چند سال ممنوع است؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0089"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q013",
-  "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
-  "category": "simple",
-  "expected_documents": ["civil_law"],
-  "relevant_chunk_ids": ["civil_law-0081"],
-  "answerable": true
-},
+    "id": "q013",
+    "question": "طبق ماده ۱۸۵ قانون مدنی، عقد لازم چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0081"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q014",
-  "question": "طبق ماده ۱۹۰ قانون مدنی، شرایط اساسی صحت هر معامله چیست؟",
-  "category": "simple",
-  "expected_documents": ["civil_law"],
-  "relevant_chunk_ids": ["civil_law-0082"],
-  "answerable": true
-},
+    "id": "q014",
+    "question": "طبق ماده ۱۹۰ قانون مدنی، شرایط اساسی صحت هر معامله چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0082"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q015",
-  "question": "طبق ماده ۱۹۳ قانون مدنی، انشای معامله در چه صورتی می‌تواند از طریق عمل انجام شود؟",
-  "category": "simple",
-  "expected_documents": ["civil_law"],
-  "relevant_chunk_ids": ["civil_law-0083"],
-  "answerable": true
-},
+    "id": "q015",
+    "question": "طبق ماده ۱۹۳ قانون مدنی، انشای معامله در چه صورتی می‌تواند از طریق عمل انجام شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_law"
+    ],
+    "relevant_chunk_ids": [
+      "civil_law-0083"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q016",
-  "question": "طبق ماده ۲ قانون کار، کارگر چه کسی است؟",
-  "category": "simple",
-  "expected_documents": ["labor_law"],
-  "relevant_chunk_ids": ["labor_law-0000"],
-  "answerable": true
-},
+    "id": "q016",
+    "question": "طبق ماده ۲ قانون کار، کارگر چه کسی است؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q017",
-  "question": "طبق اصل سی و هفتم قانون اساسی جمهوری اسلامی ایران، اصل برائت به چه معناست؟",
-  "category": "simple",
-  "expected_documents": ["constitution"],
-  "relevant_chunk_ids": ["constitution-0131"],
-  "answerable": true
-},
+    "id": "q017",
+    "question": "طبق اصل سی و هفتم قانون اساسی جمهوری اسلامی ایران، اصل برائت به چه معناست؟",
+    "category": "simple",
+    "expected_documents": [
+      "constitution"
+    ],
+    "relevant_chunk_ids": [
+      "constitution-0131"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q018",
-  "question": "طبق ماده ۲ قانون آیین دادرسی مدنی، چه اشخاصی می‌توانند رسیدگی به دعوا را از دادگاه درخواست کنند؟",
-  "category": "simple",
-  "expected_documents": ["civil_procedure"],
-  "relevant_chunk_ids": ["civil_procedure-0000", "civil_procedure-0001"],
-  "answerable": true
-},
+    "id": "q018",
+    "question": "طبق ماده ۲ قانون آیین دادرسی مدنی، چه اشخاصی می‌توانند رسیدگی به دعوا را از دادگاه درخواست کنند؟",
+    "category": "simple",
+    "expected_documents": [
+      "civil_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "civil_procedure-0000",
+      "civil_procedure-0001"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q019",
-  "question": "طبق ماده ۳ قانون آیین دادرسی کیفری، تعقیب متهم از جهت جنبه الهی و حفظ حقوق عمومی بر عهده چه کسی است و تعقیب از جهت جنبه خصوصی چگونه آغاز می‌شود؟",
-  "category": "simple",
-  "expected_documents": ["criminal_procedure"],
-  "relevant_chunk_ids": ["criminal_procedure-0002"],
-  "answerable": true
-},
+    "id": "q019",
+    "question": "طبق ماده ۳ قانون آیین دادرسی کیفری، تعقیب متهم از جهت جنبه الهی و حفظ حقوق عمومی بر عهده چه کسی است و تعقیب از جهت جنبه خصوصی چگونه آغاز می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0002"
+    ],
+    "answerable": true
+  },
   {
-  "id": "q020",
-  "question": "طبق ماده ۱ قانون مالیات‌های مستقیم، اشخاص حقیقی ایرانی مقیم ایران نسبت به چه درآمدهایی مشمول پرداخت مالیات هستند؟",
-  "category": "simple",
-  "expected_documents": ["direct_taxes"],
-  "relevant_chunk_ids": ["direct_taxes-0000"],
-  "answerable": true
-}
+    "id": "q020",
+    "question": "طبق ماده ۱ قانون مالیات‌های مستقیم، اشخاص حقیقی ایرانی مقیم ایران نسبت به چه درآمدهایی مشمول پرداخت مالیات هستند؟",
+    "category": "simple",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q021",
+    "question": "هوش مصنوعی در تعریف نقل‌شده از جان مک‌کارتی به چه حوزه‌ای مربوط می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0049"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q022",
+    "question": "بازنمایی دانش چگونه به برنامه‌های هوش مصنوعی کمک می‌کند؟",
+    "category": "simple",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0016"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q023",
+    "question": "چه عواملی می‌توانند باعث آوارگی بیشتر افراد در اثر تغییرات اقلیمی شوند؟",
+    "category": "simple",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0107"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q024",
+    "question": "طبق پژوهش‌های انجام‌شده از سال ۲۰۱۹ تا ۲۰۲۱، اجماع علمی درباره نقش انسان در تغییر اقلیم چقدر گزارش شده است؟",
+    "category": "simple",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0175"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q025",
+    "question": "واژه کامپیوتر در سال ۱۶۴۶ میلادی به چه معنا وارد فرهنگ انگلیسی آکسفورد شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0011"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q026",
+    "question": "رایانه اپل لیسا در چه سالی طراحی و در چه سالی عرضه شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0045"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q027",
+    "question": "طبق ماده ۱۵ قانون تجارت الکترونیکی، داده‌پیام و امضای الکترونیکی مطمئن از نظر اعتبار و قابلیت استناد چه حکمی دارند؟",
+    "category": "simple",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0019"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q028",
+    "question": "در طلاق توافقی، مرکز مشاوره خانواده پس از مشخص‌کردن موارد توافق چه اقدامی انجام می‌دهد؟",
+    "category": "simple",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0028"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q029",
+    "question": "طبق ماده ۴۹ قانون حمایت خانواده، اگر مرد از ثبت ازدواج دائم در دفاتر رسمی خودداری کند، چه پیامدی دارد؟",
+    "category": "simple",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0052"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q030",
+    "question": "طبق اطلاعات متن، هر تیم فوتبال چند بازیکن دارد و بالاترین نهاد ورزشی این رشته چیست؟",
+    "category": "simple",
+    "expected_documents": [
+      "football"
+    ],
+    "relevant_chunk_ids": [
+      "football-0001"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q031",
+    "question": "پس از حمله مغولان به ایران، چه آسیب‌هایی به شهرها و جامعه وارد شد؟",
+    "category": "simple",
+    "expected_documents": [
+      "iran_history"
+    ],
+    "relevant_chunk_ids": [
+      "iran_history-0156"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q032",
+    "question": "طبق متن ماده ۱۱۹ نقل‌شده در چانک، اگر شخصی مالی را که برای امانت یا مصرف معین به او سپرده شده به زیان مالک تصاحب یا تلف کند، چه رفتاری انجام داده است؟",
+    "category": "simple",
+    "expected_documents": [
+      "penal_code"
+    ],
+    "relevant_chunk_ids": [
+      "penal_code-0111"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q033",
+    "question": "چه عواملی باعث تفاوت میان انواع آشپزی منطقه‌ای ایرانی می‌شوند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_cuisine"
+    ],
+    "relevant_chunk_ids": [
+      "persian_cuisine-0002"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q034",
+    "question": "طبق کنده‌کاری توصیف‌شده در متن، از میان ۱۱ خنیاگر چند نفر چنگ، چند نفر نی و چند نفر دهل می‌نواختند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0009"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q035",
+    "question": "بخش‌های نمایش مرسوم موسیقی ایرانی که در متن معرفی شده‌اند کدام‌اند؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0017"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q036",
+    "question": "نخستین ماهواره‌ای که به مدار زمین رفت چه نام داشت و در چه سالی این اتفاق افتاد؟",
+    "category": "simple",
+    "expected_documents": [
+      "spaceflight"
+    ],
+    "relevant_chunk_ids": [
+      "spaceflight-0002"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q037",
+    "question": "طبق ماده ۱ قانون آیین دادرسی کیفری، این قانون چه فرایندهایی را تنظیم می‌کند؟",
+    "category": "simple",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q038",
+    "question": "در قانون مالیات‌های مستقیم، شخص حقیقی ایرانیِ مقیم ایران نسبت به چه درآمدهایی مشمول مالیات است؟",
+    "category": "simple",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q039",
+    "question": "طبق ماده ۳۹ قانون تجارت الکترونیکی، اگر تأمین‌کننده نتواند کالا یا خدمت را ارائه کند، اصل بر چه تکلیفی است؟",
+    "category": "simple",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0039"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q040",
+    "question": "در تعریف قانون کار، کارگر در برابر دریافت چه چیزی و به درخواست چه کسی کار می‌کند؟",
+    "category": "simple",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q041",
+    "question": "بر اساس متن درباره تغییر اقلیم، چه پیامدهایی سلامت و زندگی انسان‌ها را تهدید می‌کند؟",
+    "category": "simple",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0008"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q042",
+    "question": "طبق متن اقتصاد ایران، کدام استان سهم ۲۵ درصدی از تولید ناخالص داخلی دارد؟",
+    "category": "simple",
+    "expected_documents": [
+      "iran_economy"
+    ],
+    "relevant_chunk_ids": [
+      "iran_economy-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q043",
+    "question": "در متن تاریخ ایران، رضاشاه پایه‌های دولت خود را بر چه دو نهادی قرار داد؟",
+    "category": "simple",
+    "expected_documents": [
+      "iran_history"
+    ],
+    "relevant_chunk_ids": [
+      "iran_history-0199"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q044",
+    "question": "بر اساس متن فوتبال، تعداد اعضای هر تیم فوتبال چند نفر است؟",
+    "category": "simple",
+    "expected_documents": [
+      "football"
+    ],
+    "relevant_chunk_ids": [
+      "football-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q045",
+    "question": "در توصیف موسیقی ایرانی، اجرای مرسوم از چه بخش‌هایی تشکیل می‌شود؟",
+    "category": "simple",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0017"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q046",
+    "question": "اگر یک فرد ایرانی در خارج از کشور زندگی کند، قانون مالیات‌های مستقیم درآمد کدام محل او را مشمول مالیات می‌داند؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q047",
+    "question": "وقتی فروشنده آنلاین به علت نبود کالا نتواند سفارش را انجام دهد، باید با وجهی که گرفته چه کند؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0039"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q048",
+    "question": "در قانون کار، چه کسی از نظر حقوقی کارفرما شناخته می‌شود؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q049",
+    "question": "به زبان ساده، تعریف ارائه‌شده از هوش مصنوعی به نقل از جان مک‌کارتی بر چه چیزی تأکید دارد؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0049"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q050",
+    "question": "بازنمایی دانش چه توانایی‌هایی را برای سامانه‌های هوشمند فراهم می‌کند؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "ai"
+    ],
+    "relevant_chunk_ids": [
+      "ai-0016"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q051",
+    "question": "چرا تغییرات اقلیمی می‌تواند باعث جابه‌جایی اجباری جمعیت شود؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0107"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q052",
+    "question": "طبق متن، اجماع پژوهشگران درباره نقش انسان در تغییر اقلیم در مطالعات ۲۰۱۹ تا ۲۰۲۱ در چه بازه‌ای بوده است؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0175"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q053",
+    "question": "نام «computer» در ابتدا برای اشاره به چه کسی به کار می‌رفت؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0011"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q054",
+    "question": "رایانه اپل لیسا چه زمانی طراحی شد و چه زمانی به بازار عرضه شد؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "computers"
+    ],
+    "relevant_chunk_ids": [
+      "computers-0045"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q055",
+    "question": "در روایت حمله مغول، چه زیرساخت‌ها و میراث فرهنگی‌ای از بین رفتند؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "iran_history"
+    ],
+    "relevant_chunk_ids": [
+      "iran_history-0156"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q056",
+    "question": "در کنده‌کاری ایلام، ترکیب نوازندگان سازهای مختلف چگونه توصیف شده است؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0009"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q057",
+    "question": "چه عواملی تنوع غذاهای محلی ایران را توضیح می‌دهند؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "persian_cuisine"
+    ],
+    "relevant_chunk_ids": [
+      "persian_cuisine-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q058",
+    "question": "اولین ماهواره‌ای که به مدار زمین رسید چه نام داشت و مربوط به چه سالی بود؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "spaceflight"
+    ],
+    "relevant_chunk_ids": [
+      "spaceflight-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q059",
+    "question": "در قانون حمایت خانواده، پس از ارجاع موضوع طلاق توافقی از مرکز مشاوره، پرونده برای چه منظوری به دادگاه فرستاده می‌شود؟",
+    "category": "paraphrase",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0028"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q060",
+    "question": "در آیین دادرسی کیفری، جرم دارای دو جنبه چه دو نوع ادعایی ایجاد می‌کند و هرکدام ناظر به چه حقی است؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0001",
+      "criminal_procedure-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q061",
+    "question": "با کنار هم گذاشتن مواد ۱ و ۲ قانون مالیات‌های مستقیم، چه گروه‌هایی مشمول مالیات‌اند و چه گروه‌هایی از آن معاف شده‌اند؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000",
+      "direct_taxes-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q062",
+    "question": "با توجه به مواد ۲ و ۳ قانون کار، رابطه کارگر و کارفرما بر چه مبنای پرداخت و درخواست کاری تعریف می‌شود؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000",
+      "labor_law-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q063",
+    "question": "در قانون تجارت الکترونیکی، داده‌پیام چگونه تعریف شده و داده‌پیام مطمئن از نظر استناد قضایی چه جایگاهی دارد؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0000",
+      "ecommerce_law-0019"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q064",
+    "question": "در طلاق توافقی، مرکز مشاوره چه گزارشی را برای تصمیم نهایی به دادگاه می‌فرستد و اگر زوجین داور معرفی نکنند یا نتوانند داور تعیین کنند، دادگاه چه اختیاری دارد؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0028",
+      "family_protection-0031"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q065",
+    "question": "طبق متن تغییر اقلیم، چه خطرهایی زندگی انسان را تهدید می‌کنند و چه عواملی می‌توانند افراد را آواره کنند؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0008",
+      "climate_change-0107"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q066",
+    "question": "در متن اقتصاد ایران، سهم استان تهران از اقتصاد چقدر است و ترکیب بخشی تولید ناخالص داخلی چگونه گزارش شده؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "iran_economy"
+    ],
+    "relevant_chunk_ids": [
+      "iran_economy-0001",
+      "iran_economy-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q067",
+    "question": "در توصیف موسیقی ایرانی، ساختار اجرای مرسوم چه بخش‌هایی دارد و در کنده‌کاری ایلام سازها میان چند نوازنده چگونه تقسیم شده‌اند؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "persian_music"
+    ],
+    "relevant_chunk_ids": [
+      "persian_music-0009",
+      "persian_music-0017"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q068",
+    "question": "با توجه به تعریف کارگر و مسئولیت نماینده کارفرما، کارگاه چه رابطه‌ای با درخواست کارفرما دارد و تعهدات نمایندگان بر عهده چه کسی است؟",
+    "category": "multi_hop",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000",
+      "labor_law-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q069",
+    "question": "مفهوم «داده‌پیام» در ماده ۲ قانون تجارت الکترونیکی شامل چه نوع نماد یا اطلاعاتی است؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q070",
+    "question": "«امضای الکترونیکی» در قانون تجارت الکترونیکی از نظر اتصال به داده‌پیام چه تعریفی دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0005"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q071",
+    "question": "طبق ماده ۱۵ قانون تجارت الکترونیکی، نسبت به داده‌پیام مطمئن چه ایرادهایی قابل طرح نیست و چه ادعایی امکان‌پذیر است؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0019"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q072",
+    "question": "در ماده ۱۱۹ قانون مجازات، سپردن مال به عنوان امانت یا برای مصرف معین و سپس تصاحب آن چه عنوان رفتاری دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "penal_code"
+    ],
+    "relevant_chunk_ids": [
+      "penal_code-0111"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q073",
+    "question": "در آیین دادرسی کیفری، «تعزیرات شرعی» به چه نوع مجازاتی گفته می‌شود؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q074",
+    "question": "در قانون کار، اصطلاح «حق‌السعی» در تعریف کارگر به چه دریافتی‌هایی اشاره دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q075",
+    "question": "در قانون حمایت خانواده، خودداری از ثبت ازدواج دائم طبق ماده ۴۹ چه ضمانت اجرایی دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0052"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q076",
+    "question": "در قانون آیین دادرسی مدنی، اصل منع امتناع قاضی از رسیدگی به دلیل سکوت یا نقص قانون چه حکمی دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "civil_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "civil_procedure-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q077",
+    "question": "در قانون آیین دادرسی کیفری، تفاوت ادعای عمومی و ادعای خصوصی در چه موضوعی است؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q078",
+    "question": "طبق ماده ۳۹ قانون تجارت الکترونیکی، استرداد وجه در صورت ناتوانی تأمین‌کننده از اجرای تعهد چه استثناهایی دارد؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0039"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q079",
+    "question": "در قانون کار، «کارفرما» به چه شخصی اطلاق می‌شود و کارگر به درخواست و حساب چه کسی کار می‌کند؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000",
+      "labor_law-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q080",
+    "question": "در قانون مالیات‌های مستقیم، تفاوت قلمرو مالیاتی شخص حقیقی ایرانی مقیم ایران و ایرانی مقیم خارج چیست؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q081",
+    "question": "طبق ماده ۴۹ قانون حمایت خانواده، امتناع از ثبت نکاح در چه شرایطی می‌تواند موجب الزام به ثبت واقعه شود؟",
+    "category": "legal_terminology",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0052"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q082",
+    "question": "در میان اسناد حقوقی مجموعه، کدام سند تعریف «داده‌پیام» را ارائه می‌کند و آن را برای مبادله اطلاعات الکترونیکی به کار می‌برد؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "ecommerce_law"
+    ],
+    "relevant_chunk_ids": [
+      "ecommerce_law-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q083",
+    "question": "برای یافتن حکم مربوط به تعهدات کارگر و کارفرما، کدام سند تعریف قانونی این دو طرف را بیان می‌کند؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "labor_law"
+    ],
+    "relevant_chunk_ids": [
+      "labor_law-0000",
+      "labor_law-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q084",
+    "question": "کدام سند حقوقی در مجموعه، آثار خودداری مرد از ثبت ازدواج دائم در دفتر رسمی را بیان می‌کند؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0052"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q085",
+    "question": "کدام سند درباره تقسیم جرائم به جنبه عمومی و خصوصی و نحوه تعقیب آن‌ها صحبت می‌کند؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "criminal_procedure"
+    ],
+    "relevant_chunk_ids": [
+      "criminal_procedure-0001",
+      "criminal_procedure-0002"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q086",
+    "question": "برای حکم تصاحب یا تلف مال سپرده‌شده به امانت، باید به کدام سند کیفری و کدام ماده رجوع کرد؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "penal_code"
+    ],
+    "relevant_chunk_ids": [
+      "penal_code-0111"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q087",
+    "question": "کدام قانون در مجموعه، درباره مالیات اشخاص حقیقی ایرانی مقیم ایران و خارج از کشور حکم می‌دهد؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "direct_taxes"
+    ],
+    "relevant_chunk_ids": [
+      "direct_taxes-0000"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q088",
+    "question": "کدام سند درباره ارجاع طلاق توافقی از مرکز مشاوره به دادگاه مقررات دارد؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "family_protection"
+    ],
+    "relevant_chunk_ids": [
+      "family_protection-0028"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q089",
+    "question": "برای دانستن تعداد بازیکنان هر تیم فوتبال و نام نهاد بالادستی این ورزش، کدام سند عمومی مرتبط است؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "football"
+    ],
+    "relevant_chunk_ids": [
+      "football-0001"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q090",
+    "question": "کدام سند عمومی درباره اجماع علمی نقش انسان در تغییر اقلیم در بازه ۲۰۱۹ تا ۲۰۲۱ داده ارائه می‌کند؟",
+    "category": "similar_documents",
+    "expected_documents": [
+      "climate_change"
+    ],
+    "relevant_chunk_ids": [
+      "climate_change-0175"
+    ],
+    "answerable": true,
+    "evidence_review": "chunk text inspected; question answer is explicitly supported by cited chunk(s)"
+  },
+  {
+    "id": "q091",
+    "question": "طبق قانون حمایت از داده‌های شخصی اتحادیه اروپا، مهلت دقیق پاسخ به درخواست دسترسی موضوع ماده ۱۵ چند روز است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q092",
+    "question": "در قانون مالیات‌های مستقیم موجود در این مجموعه، نرخ مالیات بر درآمد سال ۱۴۰۵ برای شرکت‌های بورسی دقیقاً چند درصد تعیین شده است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q093",
+    "question": "بر اساس اسناد موجود، قیمت روز بیت‌کوین در تاریخ ۱۶ نوامبر ۲۰۲۶ چند دلار بوده است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q094",
+    "question": "در کدام ماده از قانون آیین دادرسی مدنی درباره استفاده از مدل زبانی GPT-6 برای صدور رأی دادگاه اجازه صریح داده شده است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q095",
+    "question": "طبق دفترچه راهنمای خودروهای برقی تسلا مدل ۲۰۲۵، ظرفیت دقیق باتری نسخه Long Range چند کیلووات‌ساعت است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q096",
+    "question": "در اسناد این مجموعه، نام و شماره تلفن رئیس فعلی سازمان ملل متحد چیست؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q097",
+    "question": "بر اساس داده‌های موجود، نتیجه مسابقه فینال جام جهانی فوتبال ۲۰۲۶ چه بوده است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q098",
+    "question": "در قانون کار موجود در مجموعه، حداقل دستمزد مصوب سال ۱۴۰۶ به تومان دقیقاً چقدر است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q099",
+    "question": "طبق آخرین گزارش سازمان جهانی بهداشت در سال ۲۰۲۶، تعداد مبتلایان روزانه به بیماری X در برلین چقدر است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  },
+  {
+    "id": "q100",
+    "question": "در کدام چانک مجموعه، فرمول شیمیایی کامل داروی جدید درمان آلزایمر با نام تجاری فرضی NeuroQ آمده است؟",
+    "category": "unanswerable",
+    "expected_documents": [],
+    "relevant_chunk_ids": [],
+    "answerable": false,
+    "evidence_review": "not found in the supplied 20-document corpus; retained as an intentionally out-of-corpus query"
+  }
 ]
